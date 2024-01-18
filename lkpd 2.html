@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // menghitung gaji karyawan
+        // input
+        let nama = "karyawan";
+        let gaji = 15000000;
+        let tunjangan = 0.20 * gaji;
+
+        // proses
+        let pajak = 0.15 * (gaji + tunjangan);
+        let gajibersih = gaji + tunjangan - pajak; 
+
+        // output
+        console.log (`gaji bersih yang diperoleh karyawan adalah sebesar ${gajibersih}`)
+
+
+        // mengkonversi jam - menit - detik ke total detik
+        // input 
+        let jam = 5;
+        let menit = 15;
+        let detik = 60;
+
+        // proses 
+        let totaldetik = jam * 3600 + menit * 60 + detik;
+
+        // output
+        console.log (`total detik keseluruhan dari : 5 jam 15 menit 60 detik adalah ${totaldetik}`)
+
+
+        // mengkonversi total detik ke bentuk jam - menit - detik
+        // input 
+        let detiktotal = 18960;
+
+        let jAm = Math.floor (detiktotal / 3600);
+        let sisadetik = detiktotal % 3600;
+        let mEnit = Math.floor ( sisadetik / 60)
+        let deTik = sisadetik % 60
+        
+
+        console.log (`${jAm} jam, ${mEnit} menit, ${deTik} detik`)
+    </script>
+</body>
+</html>

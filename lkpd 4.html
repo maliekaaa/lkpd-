@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <script>
+        // menentukan nilai rata rata
+        // input
+        let dpk = 77;
+        let mtk = 82;
+        let paibp = 70;
+
+        // proses 
+        let rata = (dpk + mtk + paibp) / 3;
+
+        if (rata >=80 && rata <=100){
+            grade = "A";
+        } else if (rata >=75 && rata <80){
+            grade = "B";
+        } else if (rata >=65 && rata <75){
+            grade = "C";
+        } else if (rata >=45 && rata <65){
+            grade = "D";
+        } else if (rata >=0 && rata <45){
+            grade = "E";
+        } else {
+            grade = "K"
+        }
+        // output
+        console.log (`nilai rata-rata iqbal adalah ${rata} maka dari itu grade yang didapatkan yaitu ${grade}`)
+
+
+        // menyatakan nomor urut dan tanggal lahir
+        // input
+        const input = Number(prompt (`Masukan kode pegawai (11 digit) : `))
+        // proses
+        const golongan = Math.floor (input % 1000000000000 / 100000000000)
+        const tanggal = Math.floor (input % 1000000000 / 1000000000 )
+        const bln = Math.floor (input % 100000000 / 10000000)
+        const tahun = Math.floor (input % 1000000 / 100)
+        const nn = Math.floor (input % 10000)
+
+        if (golongan >= 1 && golongan <= 4) {
+            let namabulan;
+            switch (bulan) {
+                case 1: namabulan = "JAN"; break;
+                case 2: namabulan = "Februari"; break;
+                case 3: namabulan = "Maret"; break;
+                case 4: namabulan = "Mei"; break;
+                case 5: namabulan = "April"; break;
+                case 6: namabulan = "Juni"; break;
+                case 7: namabulan = "Juli"; break;
+                case 8: namabulan = "Agustus"; break;
+                case 9: namabulan = "september"; break;
+                case 10: namabulan = "Oktober"; break;
+                case 11: namabulan = "November"; break;
+                case 12: namabulan = "Desember"; break;
+                default : namabulan ="in valid";
+            }
+                console.log (`karyawan dengan golongan ${input} adalah seorang pegawai dengan golongan ${golongan}, lahir pada tanggal ${tgl} ${namabulan} ${thn}, dan bernomor urut ${3}`)
+            } else {
+                console.log (`Golongan tidak valid`)
+            }
+
+
+        // menampilkan data waktu
+        // input
+        let jam = 23;
+        let menit = 59;
+        let detik = 58;
+        let hasil = detik + 1;
+        // proses
+        if (hasil > 59) {
+            detik = 0;
+            menit = menit + 1;
+            if (menit > 59) {
+                menit = 0;
+                jam = jam + 1;
+                if (jam < 23) {
+                    detik = 0;
+                    menit = 0;
+                    jam = 0;
+                }
+            }
+            console.log (`${jam} jam ${menit} menit ${detik} detik`)
+        } else {
+            console.log (`${jam} jam ${menit} menit ${hasil} detik`)
+        }
+        
+        // output
+    </script>
+</body>
+</html>

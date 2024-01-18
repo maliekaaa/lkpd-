@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // menentukan jumlah uang yang harus dibayar 
+        // input
+        let harga = 5000;
+        let berat = 8000;
+        // proses
+        let total = berat / 1000 * harga;
+        let diskon = total * 5/100;
+        let bayar = total - diskon
+        // output
+        console.log (`total harga sebelum diskon adalah ${total}`)
+        console.log (`total harga diskon adalah ${diskon}`)
+        console.log (`total harga setelah diskon adalah ${bayar}`)
+
+
+        // input sebuah bilangan bulat
+        // input
+        let bb = 1234567;
+        // proses
+        let satuan = bb % 10;
+        let puluhan = Math.floor (bb / 10 % 10 )
+        let ratusan = Math.floor (bb / 100 % 10)
+        // output
+        console.log (`${satuan} satuan`)
+        console.log (`${puluhan} puluhan`)
+        console.log (`${ratusan} ratusan`)
+        
+        
+        // cuaca
+        // input
+        let suhu = 900;
+        let derajat = 900 * 5/9 - 32;
+        // temperatur celciusnya adalah 300, jika diubah ke dalam fahrenheit adalah 572
+        // rumus mengubah celcius ke dalam fahrenheit
+        // (300C x 9/5) - 32 = (572F)
+
+        // proses dan output
+        if (suhu > 300) {
+            console.log (`panas`)
+        } else if (suhu < 250) {
+            console.log (`dingin`)
+        } else (`normal`)
+        
+    </script>
+</body>
+</html>
