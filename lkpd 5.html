@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // tugas lkpd 5 
+
+        // 1. mencetak bilangan ganjil 1 sd 50 menggunakan while 
+        // input
+        let a = 1;
+        // proses dan output
+        while (a <=50) {
+            console.log (a)
+            a++;
+        }
+
+
+        // 2. mencetak bilangan ganjil saja dari 1 sd 50 (while)
+        // input
+        let b = 1;
+        // proses dan output
+        while (b <= 50) { 
+            if (b % 2 != 0) {
+                console.log (`${b} adalah bilangin ganjil`)
+            } b++; 
+        }
+
+
+        // 3. mencetak bilangan genap saja dari 1 sd 50 (while)
+        // input 
+        let c = 1;
+        // proses dan output
+        while (c <= 50) { 
+            if (c % 2 == 0) {
+                console.log (`${c} adalah bilangin genap`)
+            } c++;
+        }
+            
+
+        
+        // 4. mencetak bilangan ganjil 1 sd 50 (while) 
+        // input
+        let d = 1;
+        // proses dan output
+        while (d <= 50) { 
+            if (d % 2 == 0) {
+                console.log (`${d} adalah bilangin genap`)
+            } else {
+                console.log (`${d} adalah bilangan ganjil`)
+            }
+            d++; 
+        }
+
+
+        // // 5. mencetak bilangan terbesar, terkecil, dan rata rata dari bilangan yang diinput sebanyak 20 bilangan
+        // // input
+        // let bilangan = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        // let terkecil = Math.min.apply (Math, bilangan);
+        // let terbesar = Math.max.apply (Math, bilangan);
+        // let rataRata 
+        // // proses
+        // // output
+        // document.write ("dari angka di atas tersebut : "+ bilangan + "<br/>");
+        // document.write ("dari angka tersebut bilangan terkecil adalah : "+ terkecil + "<br/>")
+        // document.write ("dari angka tersebut bilangan terbesar adalah : "+ terbesar);
+
+
+
+        // 5. mencetak bilangan terbesar, terkecil, dan rata rata dari bilangan yang diinput sebanyak 20 bilangan (for)
+        // input
+        let total = 0;
+        let max = -Infinity;
+        let min = Infinity;
+        let ratarata = total / 20;
+
+        // proses
+        for (let e = 1; e <= 20; e++) {
+        let bilangan = parseFloat(prompt(`masukkan bilangan ke-${e}:`));
+            total += bilangan;
+
+            if (bilangan > max) {
+                max = bilangan;
+            }
+
+            if (bilangan < min) {
+                min = bilangan;
+            }
+        }
+
+        // output
+            console.log(`bilangan terbesar: ${max}`);
+            console.log(`bilangan terkecil: ${min}`);
+            console.log(`rata-rata: ${ratarata}`);
+    </script>
+</body>
+</html>
